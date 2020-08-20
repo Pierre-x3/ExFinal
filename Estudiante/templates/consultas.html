@@ -7,9 +7,41 @@ Consultas
 {% endblock titulo %}
 
 {% block tituloprincipal %}
-Listado de Consultas
+Consultas y comentarios
 {% endblock tituloprincipal %}
 
 {% block content %}
-Acaba la lista
+
+<h3>Consulta</h3>
+
+<form name="consulta">
+  <div class="form-group">
+    <label for="Nombre">Nombre</label>
+    <input type="email" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre">
+  </div>
+  <div class="form-group">
+    <label for="correro">Correo</label>
+    <input type="email" class="form-control" id="gmail" aria-describedby="emailHelp" placeholder="gmail">
+  </div>
+  <div class="form-check">
+  <label for="sexo">Sexo</label><br>
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Hombre
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Mujer
+  </label>
+</div>
+<br>
+<div class="form-group">
+    <label for="consulta">Consulta</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su consulta"></textarea>
+</div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
 {% endblock content %}
