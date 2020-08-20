@@ -20,8 +20,9 @@ from Estudiante import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
-    path('carreras.html', views.carreras, name="carreras"),
-    path('cursos.html', views.cursos, name="cursos"),
-    path('estudiantes.html', views.estudiantes, name="estudiantes"),
-    path('consultas.html', views.consultas, name="consultas"),
+    path('carreras', views.carreras, name="carreras"),
+    path('cursos', views.cursos, name="cursos"),
+    path('eliminar_curso/<int:id>/',views.eliminar_curso, name="eliminar_curso"),
+    path('estudiantes', views.estudiantes, name="estudiantes"),
+    path('consultas', views.consultas, name="consultas"),
 ]
